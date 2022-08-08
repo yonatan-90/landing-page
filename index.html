@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--=============== BOX-ICON ===============-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>landing-page</title>
+</head>
+
+<body>
+    <header class="y-header">
+        <nav class="nav y-grid">
+            <div>
+                <a href="#" class="nav__logo">
+                    <i class='bx bxs-watch nav__logo-icon'></i> Omega</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Collection<span></span></a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Products<span></span></a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Offers<span></span></a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Order<span></span></a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact<span></span></a></li>
+                </ul>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <div class="nav__icon" id="nav-icon">
+                    <i class="ri-moon-line"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="y-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__line">
+                <div class="line__one"></div>
+                <div class="line__two"></div>
+            </div>
+            <div class="home__container y-grid">
+                <div class="home__img">
+                    <img src="assets/img/watch.png" alt="">
+                </div>
+
+                <div class="home__data">
+                    <h2 class="home__title">Speed Master</h2>
+                    <h1 class="home__title-sub">Moon watch</h1>
+
+                    <a href="#" class="button">Order Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script></script>
+    <script src="assets/js/script.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script>
+        TweenMax.from(".line__one", 1, {
+            opacity: 0,
+            delay: 2,
+            x: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".line__two", 1, {
+            opacity: 0,
+            delay: 2.5,
+            x: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".home__img img", 2, {
+            opacity: 0,
+            delay: 2.9,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+    </script>
+</body>
+
+</html>
+
+</html>
